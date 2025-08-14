@@ -17,6 +17,7 @@
         <div class="flex items-center space-x-4">
           <a href="#home" class="text-gray-700 hover:text-indigo-600">Home</a>
           <a href="#services" class="text-gray-700 hover:text-indigo-600">Services</a>
+          <a href="#location" class="text-gray-700 hover:text-indigo-600">Location</a>
           <a href="#about" class="text-gray-700 hover:text-indigo-600">About</a>
           <a href="#order" class="bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700">Order Now</a>
         </div>
@@ -74,22 +75,104 @@
     </div>
   </section>
 
-  <!-- About Section -->
-  <section id="about" class="py-16 bg-gray-100">
+  <!-- Location Section -->
+  <section id="location" class="py-16 bg-gray-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl font-bold text-center text-gray-900">About Us</h2>
-      <div class="mt-8 text-center">
-        <h3 class="text-xl font-semibold text-gray-900">Our Founder - Rachit</h3>
-        <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
-          Rachit, the visionary behind Rachit Bakery, started this journey with a passion for creating delightful culinary experiences. With a commitment to quality and innovation, Rachit ensures every item on our menu is crafted with love and precision, bringing joy to every customer.
-        </p>
-        <h3 class="mt-8 text-xl font-semibold text-gray-900">Our Location</h3>
-        <p class="mt-4 text-gray-600">
-          Visit us at: Pachrukhi, Siwan, Bihar - 841241
-        </p>
-        <p class="mt-2 text-gray-600">
-          Contact us: +91 9033583543 | Email: ranjeets94@gmail.com
-        </p>
+      <h2 class="text-3xl font-bold text-center text-gray-900 mb-8">Find Us Here</h2>
+      <div class="bg-white rounded-lg shadow-lg p-6">
+        <div class="text-center mb-6">
+          <h3 class="text-xl font-semibold text-gray-900">Our Location</h3>
+          <p class="mt-2 text-gray-600">Pachrukhi, Siwan, Bihar - 841241</p>
+          <p class="mt-1 text-gray-600">Contact: +91 9033583543 | Email: ranjeets94@gmail.com</p>
+        </div>
+        
+        <!-- Google Maps Embed -->
+        <div class="w-full h-96 rounded-lg overflow-hidden shadow-md">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.8234567890123!2d84.4132!3d26.1639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3992fae7194d6c53%3A0x398900b4a67b9521!2s5C77%2BG9C%2C%20Pachrukhi%2C%20Bihar%20841241!5e0!3m2!1sen!2sin!4v1692345678901!5m2!1sen!2sin"
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+        
+        <!-- Directions Button -->
+        <div class="text-center mt-6">
+          <a href="https://www.google.com/maps/place/5C77%2BG9C,+Pachrukhi,+Bihar+841241/@26.1639,84.4132,17z/data=!4m5!3m4!1s0x3992fae7194d6c53:0x398900b4a67b9521!8m2!3d26.1638125!4d84.4133906?hl=en&entry=ttu&g_ep=EgoyMDI1MDgxMS4wIKXMDSoASAFQAw%3D%3D" 
+             target="_blank"
+             class="inline-block bg-red-600 text-white px-6 py-3 rounded-lg hover:bg-red-700 transition font-semibold">
+            Get Directions
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">About Us</h2>
+      
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <!-- About Content -->
+        <div>
+          <h3 class="text-2xl font-semibold text-gray-900 mb-4">Our Founder - Rachit</h3>
+          <p class="text-gray-600 mb-6 leading-relaxed">
+            Rachit, the visionary behind Rachit Bakery, started this journey with a passion for creating delightful culinary experiences. With a commitment to quality and innovation, Rachit ensures every item on our menu is crafted with love and precision, bringing joy to every customer.
+          </p>
+          
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Why Choose Us?</h3>
+          <ul class="text-gray-600 space-y-2">
+            <li class="flex items-center">
+              <span class="w-2 h-2 bg-indigo-600 rounded-full mr-3"></span>
+              Fresh ingredients sourced daily
+            </li>
+            <li class="flex items-center">
+              <span class="w-2 h-2 bg-indigo-600 rounded-full mr-3"></span>
+              Handcrafted with love and care
+            </li>
+            <li class="flex items-center">
+              <span class="w-2 h-2 bg-indigo-600 rounded-full mr-3"></span>
+              Quick delivery and pickup options
+            </li>
+            <li class="flex items-center">
+              <span class="w-2 h-2 bg-indigo-600 rounded-full mr-3"></span>
+              Custom orders for special occasions
+            </li>
+          </ul>
+          
+          <div class="mt-6">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSf0xtMlt1GCofV3pzIw9I7K3hlCF5iMllcqbqwPB6oDrNFF6Q/viewform" 
+               class="bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 transition">
+              Place Your Order
+            </a>
+          </div>
+        </div>
+        
+        <!-- Location Map -->
+        <div class="bg-gray-50 rounded-lg p-6">
+          <h3 class="text-xl font-semibold text-gray-900 mb-4 text-center">Visit Our Store</h3>
+          <div class="w-full h-80 rounded-lg overflow-hidden shadow-md mb-4">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.8234567890123!2d84.4132!3d26.1639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3992fae7194d6c53%3A0x398900b4a67b9521!2s5C77%2BG9C%2C%20Pachrukhi%2C%20Bihar%20841241!5e0!3m2!1sen!2sin!4v1692345678902!5m2!1sen!2sin"
+              width="100%" 
+              height="100%" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+          
+          <div class="text-center">
+            <p class="text-gray-700 font-medium">📍 Pachrukhi, Siwan, Bihar - 841241</p>
+            <p class="text-gray-600 mt-2">📞 +91 9033583543</p>
+            <p class="text-gray-600">📧 ranjeets94@gmail.com</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
