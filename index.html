@@ -5,281 +5,102 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rachit Bakery - Delicious Cakes, Pizzas & More</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-vintage-cream font-sans">
-  <!-- Loading Screen -->
-  <div id="loading-screen" class="fixed inset-0 bg-vintage-brown z-50 flex items-center justify-center">
-    <div class="text-center">
-      <div class="vintage-loader"></div>
-      <h2 class="text-vintage-cream text-2xl font-playfair mt-4">Rachit Bakery</h2>
-    </div>
-  </div>
-
+<body class="bg-gray-100 font-sans">
   <!-- Navbar -->
-  <nav class="bg-vintage-cream/95 backdrop-blur-md shadow-vintage fixed w-full z-40 navbar-vintage">
+  <nav class="bg-white shadow-lg fixed w-full z-10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between h-20">
+      <div class="flex justify-between h-16">
         <div class="flex items-center">
-          <div class="vintage-logo">
-            <i class="fas fa-birthday-cake text-vintage-brown text-3xl mr-3"></i>
-            <h1 class="text-3xl font-playfair font-bold text-vintage-brown">Rachit Bakery</h1>
-          </div>
+          <h1 class="text-2xl font-bold text-indigo-600">Rachit Bakery</h1>
         </div>
-        <div class="hidden md:flex items-center space-x-8">
-          <a href="#home" class="nav-link text-vintage-brown hover:text-vintage-gold font-medium">Home</a>
-          <a href="#services" class="nav-link text-vintage-brown hover:text-vintage-gold font-medium">Services</a>
-          <a href="#about" class="nav-link text-vintage-brown hover:text-vintage-gold font-medium">About</a>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSf0xtMlt1GCofV3pzIw9I7K3hlCF5iMllcqbqwPB6oDrNFF6Q/viewform" class="vintage-btn">
-            <i class="fas fa-shopping-cart mr-2"></i>Order Now
-          </a>
+        <div class="flex items-center space-x-4">
+          <a href="#home" class="text-gray-700 hover:text-indigo-600">Home</a>
+          <a href="#services" class="text-gray-700 hover:text-indigo-600">Services</a>
+          <a href="#about" class="text-gray-700 hover:text-indigo-600">About</a>
+          <a href="#order" class="bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700">Order Now</a>
         </div>
-        <div class="md:hidden flex items-center">
-          <button id="mobile-menu-btn" class="text-vintage-brown text-2xl">
-            <i class="fas fa-bars"></i>
-          </button>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="md:hidden bg-vintage-cream/95 backdrop-blur-md hidden">
-      <div class="px-4 pt-2 pb-4 space-y-2">
-        <a href="#home" class="block text-vintage-brown hover:text-vintage-gold font-medium py-2">Home</a>
-        <a href="#services" class="block text-vintage-brown hover:text-vintage-gold font-medium py-2">Services</a>
-        <a href="#about" class="block text-vintage-brown hover:text-vintage-gold font-medium py-2">About</a>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSf0xtMlt1GCofV3pzIw9I7K3hlCF5iMllcqbqwPB6oDrNFF6Q/viewform" class="vintage-btn block text-center mt-4">
-          <i class="fas fa-shopping-cart mr-2"></i>Order Now
-        </a>
       </div>
     </div>
   </nav>
 
   <!-- Hero Section -->
-  <section id="home" class="min-h-screen flex items-center pt-20 vintage-hero">
-    <div class="absolute inset-0 vintage-pattern opacity-10"></div>
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center relative z-10">
+  <section id="home" class="min-h-screen flex items-center pt-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center">
       <!-- Text Section -->
-      <div class="lg:w-1/2 text-center lg:text-left mb-8 lg:mb-0">
-        <div class="vintage-badge mb-6">
-          <span>EST. 2025</span>
-        </div>
-        <h2 class="text-5xl md:text-6xl lg:text-7xl font-playfair font-bold text-vintage-brown leading-tight">
-          Welcome to <span class="text-vintage-gold">Rachit</span> Bakery
-        </h2>
-        <div class="vintage-divider my-6"></div>
-        <p class="mt-6 text-xl text-vintage-brown/80 leading-relaxed max-w-lg">
+      <div class="lg:w-1/2 text-center lg:text-left">
+        <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900">Welcome to Rachit Bakery</h2>
+        <p class="mt-4 text-lg text-gray-600">
           Indulge in our delicious range of cakes, pizzas, burgers, and chili momos, crafted with love and the finest ingredients. Experience the taste of joy at Rachit Bakery!
         </p>
-        <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSf0xtMlt1GCofV3pzIw9I7K3hlCF5iMllcqbqwPB6oDrNFF6Q/viewform" class="vintage-btn-large">
-            <i class="fas fa-shopping-cart mr-3"></i>Order Now
-          </a>
-          <button class="vintage-btn-outline" onclick="document.getElementById('services').scrollIntoView({behavior: 'smooth'})">
-            <i class="fas fa-eye mr-3"></i>View Menu
-          </button>
-        </div>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSf0xtMlt1GCofV3pzIw9I7K3hlCF5iMllcqbqwPB6oDrNFF6Q/viewform" class="mt-6 inline-block bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 transition">Order Now</a>
       </div>
-      
       <!-- Image Section -->
       <div class="lg:w-1/2 mt-8 lg:mt-0">
-        <div class="relative w-full h-96 lg:h-[500px]">
-          <div class="vintage-frame absolute inset-4">
-            <img src="https://raw.githubusercontent.com/pyrite23/rachitbakery/main/images/burger.png" alt="Burger" class="absolute inset-0 w-3/4 h-3/4 object-cover vintage-shadow floating-1">
-            <img src="https://raw.githubusercontent.com/pyrite23/rachitbakery/main/images/pizzarachit.webp" alt="Pizza" class="absolute inset-0 w-3/4 h-3/4 object-cover vintage-shadow transform translate-x-20 translate-y-20 floating-2">
-          </div>
+        <div class="relative w-full h-96">
+          <img src="https://raw.githubusercontent.com/pyrite23/rachitbakery/main/images/burger.png" alt="Burger" class="absolute inset-0 w-3/4 h-3/4 object-cover rounded-lg shadow-lg">
+          <img src="https://raw.githubusercontent.com/pyrite23/rachitbakery/main/images/pizzarachit.webp" alt="Pizza" class="absolute inset-0 w-3/4 h-3/4 object-cover rounded-lg shadow-lg transform translate-x-20 translate-y-20">
         </div>
-      </div>
-    </div>
-    
-    <!-- Scroll Indicator -->
-    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-      <div class="scroll-indicator">
-        <i class="fas fa-chevron-down text-vintage-gold"></i>
       </div>
     </div>
   </section>
 
   <!-- Services Section -->
-  <section id="services" class="py-20 bg-vintage-cream relative">
-    <div class="absolute inset-0 vintage-texture opacity-5"></div>
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-      <div class="text-center mb-16">
-        <div class="vintage-badge-center mb-6">
-          <span>OUR SPECIALTIES</span>
-        </div>
-        <h2 class="text-5xl font-playfair font-bold text-vintage-brown mb-6">Our Delicious Services</h2>
-        <div class="vintage-divider-center"></div>
-      </div>
-      
+  <section id="services" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-center text-gray-900">Our Services</h2>
       <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-        <div class="vintage-card group" data-aos="fade-up" data-delay="100">
-          <div class="vintage-card-image">
-            <img src="https://raw.githubusercontent.com/pyrite23/rachitbakery/main/images/cakesrachit.avif" alt="Cakes" class="w-full h-40 object-cover">
-            <div class="vintage-overlay">
-              <i class="fas fa-birthday-cake text-4xl text-vintage-cream"></i>
-            </div>
-          </div>
-          <div class="p-6">
-            <h3 class="text-2xl font-playfair font-semibold text-vintage-brown mb-3">Custom Cakes</h3>
-            <p class="text-vintage-brown/70 leading-relaxed">From birthdays to weddings, our custom cakes are baked to perfection with your choice of flavors and artistic designs.</p>
-          </div>
+        <div class="text-center">
+          <img src="https://raw.githubusercontent.com/pyrite23/rachitbakery/main/images/cakesrachit.avif" alt="Cakes" class="w-32 h-32 mx-auto rounded-full object-cover">
+          <h3 class="mt-4 text-xl font-semibold text-gray-900">Custom Cakes</h3>
+          <p class="mt-2 text-gray-600">From birthdays to weddings, our custom cakes are baked to perfection with your choice of flavors.</p>
         </div>
-        
-        <div class="vintage-card group" data-aos="fade-up" data-delay="200">
-          <div class="vintage-card-image">
-            <img src="https://raw.githubusercontent.com/pyrite23/rachitbakery/main/images/pizzarachit.webp" alt="Pizzas" class="w-full h-40 object-cover">
-            <div class="vintage-overlay">
-              <i class="fas fa-pizza-slice text-4xl text-vintage-cream"></i>
-            </div>
-          </div>
-          <div class="p-6">
-            <h3 class="text-2xl font-playfair font-semibold text-vintage-brown mb-3">Artisan Pizzas</h3>
-            <p class="text-vintage-brown/70 leading-relaxed">Savor our hand-tossed pizzas with fresh toppings and cheesy goodness, baked in traditional style.</p>
-          </div>
+        <div class="text-center">
+          <img src="https://raw.githubusercontent.com/pyrite23/rachitbakery/main/images/pizzarachit.webp" alt="Pizzas" class="w-32 h-32 mx-auto rounded-full object-cover">
+          <h3 class="mt-4 text-xl font-semibold text-gray-900">Pizzas</h3>
+          <p class="mt-2 text-gray-600">Savor our hand-tossed pizzas with fresh toppings and cheesy goodness.</p>
         </div>
-        
-        <div class="vintage-card group" data-aos="fade-up" data-delay="300">
-          <div class="vintage-card-image">
-            <img src="https://raw.githubusercontent.com/pyrite23/rachitbakery/main/images/burger.png" alt="Burgers" class="w-full h-40 object-cover">
-            <div class="vintage-overlay">
-              <i class="fas fa-hamburger text-4xl text-vintage-cream"></i>
-            </div>
-          </div>
-          <div class="p-6">
-            <h3 class="text-2xl font-playfair font-semibold text-vintage-brown mb-3">Gourmet Burgers</h3>
-            <p class="text-vintage-brown/70 leading-relaxed">Juicy, flavorful burgers made with premium ingredients to satisfy your cravings with every bite.</p>
-          </div>
+        <div class="text-center">
+          <img src="https://raw.githubusercontent.com/pyrite23/rachitbakery/main/images/burger.png" alt="Burgers" class="w-32 h-32 mx-auto rounded-full object-cover">
+          <h3 class="mt-4 text-xl font-semibold text-gray-900">Burgers</h3>
+          <p class="mt-2 text-gray-600">Juicy, flavorful burgers made with premium ingredients to satisfy your cravings.</p>
         </div>
-        
-        <div class="vintage-card group" data-aos="fade-up" data-delay="400">
-          <div class="vintage-card-image">
-            <img src="https://images.unsplash.com/photo-1603133872878-684f1e9e8fd0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Chili Momos" class="w-full h-40 object-cover">
-            <div class="vintage-overlay">
-              <i class="fas fa-pepper-hot text-4xl text-vintage-cream"></i>
-            </div>
-          </div>
-          <div class="p-6">
-            <h3 class="text-2xl font-playfair font-semibold text-vintage-brown mb-3">Spicy Momos</h3>
-            <p class="text-vintage-brown/70 leading-relaxed">Spicy and delicious momos, perfect for a quick snack or a hearty meal with authentic flavors.</p>
-          </div>
+        <div class="text-center">
+          <img src="https://images.unsplash.com/photo-1603133872878-684f1e9e8fd0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Chili Momos" class="w-32 h-32 mx-auto rounded-full object-cover">
+          <h3 class="mt-4 text-xl font-semibold text-gray-900">Chili Momos</h3>
+          <p class="mt-2 text-gray-600">Spicy and delicious momos, perfect for a quick snack or a hearty meal.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- About Section -->
-  <section id="about" class="py-20 bg-vintage-brown text-vintage-cream relative overflow-hidden">
-    <div class="absolute inset-0 vintage-dark-pattern opacity-20"></div>
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-      <div class="text-center mb-16">
-        <div class="vintage-badge-light mb-6">
-          <span>OUR STORY</span>
-        </div>
-        <h2 class="text-5xl font-playfair font-bold mb-6">About Rachit Bakery</h2>
-        <div class="vintage-divider-light"></div>
-      </div>
-      
-      <div class="grid md:grid-cols-2 gap-12 items-center">
-        <div class="space-y-8">
-          <div class="vintage-about-card">
-            <div class="flex items-start space-x-4">
-              <div class="vintage-icon">
-                <i class="fas fa-user-tie"></i>
-              </div>
-              <div>
-                <h3 class="text-2xl font-playfair font-semibold mb-3">Our Founder - Rachit</h3>
-                <p class="text-vintage-cream/80 leading-relaxed">
-                  Rachit, the visionary behind Rachit Bakery, started this journey with a passion for creating delightful culinary experiences. With a commitment to quality and innovation, Rachit ensures every item on our menu is crafted with love and precision, bringing joy to every customer.
-                </p>
-              </div>
-            </div>
-          </div>
-          
-          <div class="vintage-about-card">
-            <div class="flex items-start space-x-4">
-              <div class="vintage-icon">
-                <i class="fas fa-map-marker-alt"></i>
-              </div>
-              <div>
-                <h3 class="text-2xl font-playfair font-semibold mb-3">Visit Us</h3>
-                <p class="text-vintage-cream/80 leading-relaxed mb-4">
-                  <strong>Address:</strong> Pachrukhi, Siwan, Bihar - 841241
-                </p>
-                <p class="text-vintage-cream/80 leading-relaxed">
-                  <strong>Contact:</strong> +91 9033583543<br>
-                  <strong>Email:</strong> ranjeets94@gmail.com
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="relative">
-          <div class="vintage-testimonial">
-            <div class="text-center p-8">
-              <div class="text-6xl text-vintage-gold mb-4">
-                <i class="fas fa-quote-left"></i>
-              </div>
-              <p class="text-xl italic text-vintage-cream/90 mb-6 leading-relaxed">
-                "Every bite tells a story of tradition, quality, and passion. We don't just bake food; we create memories."
-              </p>
-              <div class="vintage-signature">- Rachit</div>
-            </div>
-          </div>
-        </div>
+  <section id="about" class="py-16 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-center text-gray-900">About Us</h2>
+      <div class="mt-8 text-center">
+        <h3 class="text-xl font-semibold text-gray-900">Our Founder - Rachit</h3>
+        <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
+          Rachit, the visionary behind Rachit Bakery, started this journey with a passion for creating delightful culinary experiences. With a commitment to quality and innovation, Rachit ensures every item on our menu is crafted with love and precision, bringing joy to every customer.
+        </p>
+        <h3 class="mt-8 text-xl font-semibold text-gray-900">Our Location</h3>
+        <p class="mt-4 text-gray-600">
+          Visit us at: Pachrukhi, Siwan, Bihar - 841241
+        </p>
+        <p class="mt-2 text-gray-600">
+          Contact us: +91 9033583543 | Email: ranjeets94@gmail.com
+        </p>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-vintage-dark text-vintage-cream py-12 relative">
-    <div class="absolute inset-0 vintage-footer-pattern opacity-10"></div>
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-      <div class="grid md:grid-cols-3 gap-8 mb-8">
-        <div class="text-center md:text-left">
-          <div class="vintage-logo-footer mb-4">
-            <i class="fas fa-birthday-cake text-vintage-gold text-3xl mr-3"></i>
-            <h3 class="text-2xl font-playfair font-bold">Rachit Bakery</h3>
-          </div>
-          <p class="text-vintage-cream/70">Crafting delicious memories since 2025</p>
-        </div>
-        
-        <div class="text-center">
-          <h4 class="text-lg font-semibold mb-4 text-vintage-gold">Follow Us</h4>
-          <div class="flex justify-center space-x-4">
-            <a href="#" class="vintage-social-icon">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="#" class="vintage-social-icon">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="#" class="vintage-social-icon">
-              <i class="fab fa-twitter"></i>
-            </a>
-          </div>
-        </div>
-        
-        <div class="text-center md:text-right">
-          <h4 class="text-lg font-semibold mb-4 text-vintage-gold">Developed by</h4>
-          <p class="text-vintage-cream/70">baRk Apps</p>
-          <p class="text-vintage-cream/70">pyritesoftware@gmail.com</p>
-        </div>
-      </div>
-      
-      <div class="border-t border-vintage-cream/20 pt-8 text-center">
-        <p class="text-vintage-cream/60">&copy; 2025 Rachit Bakery. All rights reserved.</p>
-      </div>
+  <footer class="bg-gray-800 text-white py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <p class="text-center">Developed by baRk Apps</p>
+      <p class="text-center">Mail - pyritesoftware@gmail.com</p>
+      <p class="text-center mt-2">&copy; 2025 Rachit Bakery. All rights reserved.</p>
     </div>
   </footer>
-
-  <!-- Back to Top Button -->
-  <button id="back-to-top" class="vintage-back-to-top hidden">
-    <i class="fas fa-arrow-up"></i>
-  </button>
-
-  <script src="script.js"></script>
 </body>
 </html>
