@@ -1,0 +1,28 @@
+/* Custom styles to enhance Tailwind */
+body {
+  scroll-behavior: smooth;
+}
+
+nav a {
+  transition: color 0.3s ease;
+}
+
+section {
+  transition: opacity 0.5s ease-in-out;
+}
+
+img {
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+#order {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#order:hover {
+  transform: translateY(-2px);
+}
